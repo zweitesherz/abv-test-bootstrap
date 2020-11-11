@@ -81,6 +81,8 @@ h1 {
     text-transform: uppercase;
 }
 
+
+
 .btn {
     width: 300px;
     height: 65px;
@@ -206,6 +208,99 @@ background-image: url(../img/slide2.jpg);
 }
 
 
+/*ФОРМА*/
+.form-wrapper {
+    height: 461px;
+    background: #282828;
+}
+
+h3 {
+    font-family: 'Open Sans Hebrew',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-bottom: 49px;
+}
+
+input {
+    background: #E5E5E5;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+
+.person-data {
+    height: 65px;
+}
+
+.message {
+    height: 135px;
+    margin-top: 22px;
+    resize: none;
+}
+
+.btn-form {
+   margin-top: 22px !important;
+}
+
+/*ФОРМА*/
+
+
+/*СПИСКИ*/
+.description {
+    margin-bottom: 30px;
+}
+
+.panel-heading {
+    height: 85px;
+    background-color: #C4C4C4;
+    background-image:url(../img/plus.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 40px) 30px;
+
+}
+
+.panel-heading.active {
+    background-image:url(../img/minus.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 40px) 42px;
+}
+
+.panel-body {
+    min-height: 140px;
+    font-family: 'Open Sans Hebrew',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+    background: #E5E5E5;
+    padding: 5% 5% 5% 27px;
+}
+
+.panel-title{
+    font-family: 'Open Sans Hebrew',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 27px;
+
+    color: #FFFFFF;
+    height: 100%;
+}
+
+.panel-heading a:hover  ,
+.panel-heading a:active ,
+.panel-heading a:focus  {
+    text-decoration:none;
+}
+
+/*СПИСКИ*/
 
 @media screen and (max-width: 1126px) {
     .intro {
@@ -246,7 +341,11 @@ background-image: url(../img/slide2.jpg);
     }
 
     .slide {
-        height: 350px;
+        height: 250px;
+    }
+
+    .title-form {
+        margin-top: 255px !important;
     }
 
 }
@@ -278,14 +377,10 @@ background-image: url(../img/slide2.jpg);
     }
 
     .carousel-control-next-icon {
-        /*background-image: url(../img/arrow.svg);*/
-        /*background-color: #AEA59E;*/
         background-image:none;
     }
 
     .carousel-control-prev-icon {
-        /*background-image: url(../img/arrowPrev.svg);*/
-        /*z-index: 3;*/
         background-image:none;
     }
 
