@@ -203,18 +203,25 @@
 
             </div>
         </main>
+
+<!--        ФОРМА-->
         <form class="form-wrapper text-center">
             <div class="wrapper mx-auto">
+
                     <h3>Стандартная форма обратной связи</h3>
                     <div>
-                        <input class="col-5 person-data" placeholder="Ваше имя*">
-                        <input class="col-5 person-data" placeholder="Ваш номер*">
+                        <input type="text" class="col-5 person-data " placeholder="Ваше имя*" pattern="^[( )А-Яа-яA-Za-z]+$" required=""  >
+                        <input type="tel" id="checkNumber" min="6" step="any" class="col-5 person-data" placeholder="Ваш номер*"  required="">
                     </div>
 
+
+
                 <textarea class="col-10 message" placeholder="Сообщение"></textarea>
-                    <button type="button" class="btn btn-secondary btn-form mx-auto">Отправить</button>
+                    <button  type="submit" class="btn btn-secondary btn-form mx-auto">Отправить</button>
             </div>
         </form>
+<!--        ФОРМА-->
+
         <div class="wrapper mx-auto">
             <h1 class="title-mine">Список</h1>
 

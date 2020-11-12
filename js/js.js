@@ -1,3 +1,9 @@
 $(".panel-heading").on("click", function () {
     $(this).toggleClass('active');
 });
+
+
+// Запрет на введение букв в поле телефоного номера
+document.getElementById('checkNumber').onkeydown = function (e) {
+    return !(/^[А-Яа-яA-Za-z ]$/.test(e.key));  // IE > 9
+}
