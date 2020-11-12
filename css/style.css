@@ -354,7 +354,7 @@ input:active, :hover, :focus {
     text-decoration:none;
 }
 
-/*СПИСКИ*/
+/*СПИСКИ конец*/
 
 @media screen and (max-width: 1126px) {
 
@@ -413,6 +413,14 @@ input:active, :hover, :focus {
         margin-top: 255px !important;
     }
 
+    .description {
+        margin-bottom: 10px;
+    }
+
+    .arrowMobileCards {
+        top: auto;
+    }
+    /*выравниваю стрелки по центру вертикально у карточек*/
 }
 
 @media screen and (min-width: 300px) and (max-width: 720px) {
@@ -433,8 +441,10 @@ input:active, :hover, :focus {
     .arrow-bg-prev, .arrow-bg-next {
         background-color: transparent;
         background-image: none;
+        height: auto;
 
     }
+
 
     .carousel-control-next, .carousel-control-prev {
         width: 16%;
@@ -442,6 +452,13 @@ input:active, :hover, :focus {
 }
 
 @media screen and (min-width: 720px) {
+
+
+
+    .arrowForList {
+        width: 13%;
+    }
+
     #carouselMobile {
         display: none;
     }

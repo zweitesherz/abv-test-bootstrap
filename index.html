@@ -11,7 +11,7 @@
         <title>Тестовое задание для АБВ! студии</title>
     </head>
     <body>
-        <nav class="navbar  navbar-expand-md bg-black navbar-dark">
+        <nav class="navbar fixed-top navbar-expand-md bg-black navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,16 +21,16 @@
                             <a class="nav-link" href="#">Главная</a>
                         </li>
                         <li class="nav-item col-xl-2">
-                            <a class="nav-link" href="#">Слайдер</a>
+                            <a class="nav-link" href="#slider">Слайдер</a>
                         </li>
                         <li class="nav-item col-xl-2">
-                            <a class="nav-link" href="#">Карточки</a>
+                            <a class="nav-link" href="#cards">Карточки</a>
                         </li>
                         <li class="nav-item col-xl-2">
-                            <a class="nav-link" href="#">Форма</a>
+                            <a class="nav-link" href="#form">Форма</a>
                         </li>
                         <li class="nav-item col-xl-2">
-                            <a class="nav-link" href="#">Список</a>
+                            <a class="nav-link" href="#list">Список</a>
                         </li>
                         <li class="nav-item col-xl-2">
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalCenter">Модалка</a>
@@ -67,9 +67,9 @@
 
         <main class="col-12">
             <div class="wrapper mx-auto">
-                <h1 class="title-mine">Слайдер</h1>
+                <h1 class="title-mine" id="slider">Слайдер</h1>
 
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+                <div  id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
 
@@ -80,13 +80,13 @@
                             <div class="slider-image item-img2 slide"></div>
                         </div>
 
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <div class="arrow-bg-prev">
+                        <a class="carousel-control-prev arrowForList" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <div class="arrow-bg-prev ">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </div>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <a class="carousel-control-next arrowForList" href="#carouselExampleControls" role="button" data-slide="next">
                             <div class="arrow-bg-next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
 
-                <h1 class="title-mine">Карточки</h1>
+                <h1 class="title-mine" id="cards">Карточки</h1>
 
 <!--                КАРТОЧКИ ДЕСКТОП-->
 
@@ -188,18 +188,18 @@
                                 </div>
                         </div>
                     </div>
-                        <a class="carousel-control-prev" href="#carouselMobile" role="button" data-slide="prev">
+                        <a class="carousel-control-prev arrowMobileCards" href="#carouselMobile" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                         </a>
 
-                    <a class="carousel-control-next" href="#carouselMobile" role="button" data-slide="next">
+                    <a class="carousel-control-next arrowMobileCards" href="#carouselMobile" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
                 <!--                КАРТОЧКИ МОБАЙЛ КОНЕЦ-->
-                <h1 class="title-mine title-form">ФОРМА</h1>
+                <h1 class="title-mine title-form" id="form">ФОРМА</h1>
 
             </div>
         </main>
@@ -210,7 +210,7 @@
 
                     <h3>Стандартная форма обратной связи</h3>
                     <div>
-                        <input type="text" class="col-5 person-data " placeholder="Ваше имя*" pattern="^[( )А-Яа-яA-Za-z]+$" required=""  >
+                        <input type="text" class="col-5 person-data " placeholder="Ваше имя*" pattern="^[( )А-Яа-яA-Za-zop ]+$" required=""  >
                         <input type="tel" id="checkNumber" min="6" step="any" class="col-5 person-data" placeholder="Ваш номер*"  required="">
                     </div>
 
@@ -222,8 +222,8 @@
         </form>
 <!--        ФОРМА-->
 
-        <div class="wrapper mx-auto">
-            <h1 class="title-mine">Список</h1>
+        <div class="col wrapper mx-auto">
+            <h1 class="title-mine" id="list">Список</h1>
 
             <div class="panel-group col-12" id="accordion">
                 <div class="description">
@@ -272,16 +272,16 @@
                             <a class="nav-link" href="#">Главная</a>
                         </li>
                         <li class="nav-item col-xl-2">
-                            <a class="nav-link" href="#">Слайдер</a>
+                            <a class="nav-link" href="#slider">Слайдер</a>
                         </li>
                         <li class="nav-item col-xl-2">
-                            <a class="nav-link" href="#">Карточки</a>
+                            <a class="nav-link" href="#cards">Карточки</a>
                         </li>
                         <li class="nav-item col-xl-2">
-                            <a class="nav-link" href="#">Форма</a>
+                            <a class="nav-link" href="#form">Форма</a>
                         </li>
                         <li class="nav-item col-xl-2">
-                            <a class="nav-link" href="#">Список</a>
+                            <a class="nav-link" href="#list">Список</a>
                         </li>
                         <li class="nav-item col-xl-2">
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalCenter">Модалка</a>
