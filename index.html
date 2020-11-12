@@ -12,7 +12,6 @@
     </head>
     <body>
         <nav class="navbar  navbar-expand-md bg-black navbar-dark">
-<!--            <a class="navbar-brand" href="#">Меню</a>-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,7 +33,7 @@
                             <a class="nav-link" href="#">Список</a>
                         </li>
                         <li class="nav-item col-xl-2">
-                            <a class="nav-link" href="#">Модалка</a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalCenter">Модалка</a>
                         </li>
                     </ul>
                 </div>
@@ -45,11 +44,26 @@
                     <h1>Тестовое задание</h1>
                     <h1>АБВ! студия</h1>
                 </div>
-
-                <button type="button" class="btn btn-secondary">Модальное окно</button>
-
+                <button type="button" class="btn btn-secondary btn-modal" data-toggle="modal" data-target="#ModalCenter" >Модальное окно</button>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        МОДАЛКА
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //Modal -->
 
         <main class="col-12">
             <div class="wrapper mx-auto">
@@ -93,18 +107,18 @@
                                 <div class="col-4 card-body">
                                     <h2 class="card-title text-center">Услуга 1</h2>
                                     <div class="thumbnail-card mx-auto"></div>
-                                    <button type="button" class="btn btn-card btn-secondary mx-auto">Модальное окно</button>
+                                    <button type="button" class="btn btn-card btn-secondary mx-auto" data-toggle="modal" data-target="#ModalCenter">Модальное окно</button>
                                 </div>
                                 <div class="col-4 card-body">
                                         <h2 class="card-title text-center">Услуга 2</h2>
                                         <div class="thumbnail-card mx-auto"></div>
-                                        <button type="button" class="btn btn-card btn-secondary mx-auto">Модальное окно</button>
+                                        <button type="button" class="btn btn-card btn-secondary mx-auto" data-toggle="modal" data-target="#ModalCenter">Модальное окно</button>
                                 </div>
 
                                 <div class="col-4 card-body">
                                     <h2 class="card-title text-center">Услуга 3</h2>
                                     <div class="thumbnail-card mx-auto"></div>
-                                    <button type="button" class="btn btn-card btn-secondary mx-auto">Модальное окно</button>
+                                    <button type="button" class="btn btn-card btn-secondary mx-auto" data-toggle="modal" data-target="#ModalCenter">Модальное окно</button>
                                 </div>
                             </div>
                         </div>
@@ -155,14 +169,14 @@
                                 <div class="col-11 mx-auto card-body">
                                     <h2 class="card-title text-center">Услуга 1</h2>
                                     <div class="thumbnail-card mx-auto"></div>
-                                    <button type="button" class="btn btn-card btn-secondary mx-auto">Модальное окно</button>
+                                    <button type="button" class="btn btn-card btn-secondary mx-auto"data-toggle="modal" data-target="#ModalCenter">Модальное окно</button>
                                 </div>
                         </div>
                         <div class="carousel-item">
                                 <div class="col-11 mx-auto card-body">
                                     <h2 class="card-title text-center">Услуга 2</h2>
                                     <div class="thumbnail-card mx-auto"></div>
-                                    <button type="button" class="btn btn-card btn-secondary mx-auto">Модальное окно</button>
+                                    <button type="button" class="btn btn-card btn-secondary mx-auto" data-toggle="modal" data-target="#ModalCenter">Модальное окно</button>
                                 </div>
                         </div>
 
@@ -170,7 +184,7 @@
                                 <div class="col-11 mx-auto card-body">
                                     <h2 class="card-title text-center">Услуга 3</h2>
                                     <div class="thumbnail-card mx-auto"></div>
-                                    <button type="button" class="btn btn-card btn-secondary mx-auto">Модальное окно</button>
+                                    <button type="button" class="btn btn-card btn-secondary mx-auto" data-toggle="modal" data-target="#ModalCenter">Модальное окно</button>
                                 </div>
                         </div>
                     </div>
@@ -191,11 +205,12 @@
         </main>
         <form class="form-wrapper text-center">
             <div class="wrapper mx-auto">
-                <h3>Стандартная форма обратной связи</h3>
-                <div>
-                    <input class="col-5 person-data" placeholder="Ваше имя*">
-                    <input class="col-5 person-data" placeholder="Ваш номер*">
-                </div>
+                    <h3>Стандартная форма обратной связи</h3>
+                    <div>
+                        <input class="col-5 person-data" placeholder="Ваше имя*">
+                        <input class="col-5 person-data" placeholder="Ваш номер*">
+                    </div>
+
                 <textarea class="col-10 message" placeholder="Сообщение"></textarea>
                     <button type="button" class="btn btn-secondary btn-form mx-auto">Отправить</button>
             </div>
@@ -237,8 +252,37 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
+        <footer>
+            <nav class="navbar  navbar-expand-md bg-black navbar-dark">
+<!--                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">-->
+<!--                    <span class="navbar-toggler-icon"></span>-->
+<!--                </button>-->
+<!--                <div class="collapse navbar-collapse" id="collapsibleNavbar2">-->
+                    <ul class="navbar-nav mx-auto col-xl-12 text-left">
+                        <li class="nav-item col-xl-2">
+                            <a class="nav-link" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item col-xl-2">
+                            <a class="nav-link" href="#">Слайдер</a>
+                        </li>
+                        <li class="nav-item col-xl-2">
+                            <a class="nav-link" href="#">Карточки</a>
+                        </li>
+                        <li class="nav-item col-xl-2">
+                            <a class="nav-link" href="#">Форма</a>
+                        </li>
+                        <li class="nav-item col-xl-2">
+                            <a class="nav-link" href="#">Список</a>
+                        </li>
+                        <li class="nav-item col-xl-2">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalCenter">Модалка</a>
+                        </li>
+                    </ul>
+<!--                </div>-->
+            </nav>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
