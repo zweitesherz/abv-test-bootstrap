@@ -30,6 +30,10 @@ src: url("../fonts/opensanshebrew-bold.ttf") format("truetype");
     background: #282828;
 }
 
+.navbar-dark .navbar-toggler {
+    outline: none;
+}
+
 a {
     font-family: 'Open sans hebrew', sans-serif;
     font-style: normal;
@@ -172,20 +176,6 @@ background-image: url(../img/slide2.jpg);
 
 }
 
-/*.carousel-control-next-icon {*/
-/*    !*background-image: url(../img/arrow.svg);*!*/
-/*    !*background-color: #AEA59E;*!*/
-/*    background-image:none;*/
-/*}*/
-
-/*.carousel-control-prev-icon {*/
-/*    !*background-image: url(../img/arrowPrev.svg);*!*/
-/*    !*z-index: 3;*!*/
-/*    background-image:none;*/
-/*}*/
-
-
-
 .card-body {
     height: 461px;
     background: #C4C4C4;
@@ -194,8 +184,6 @@ background-image: url(../img/slide2.jpg);
     margin: 15px;
     width: auto;
 }
-
-
 
 .carousel-control-next, .carousel-control-prev {
     width: 7%;
@@ -274,12 +262,28 @@ input {
 
 .person-data {
     height: 65px;
+    font-family: 'Open Sans Hebrew',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #282828;
+
 }
 
 .message {
     height: 135px;
     margin-top: 22px;
     resize: none;
+    font-family: 'Open Sans Hebrew',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #282828;
+
 }
 
 .btn-form {
@@ -392,7 +396,12 @@ input:active, :hover, :focus {
 @media screen and (min-width: 320px) and (max-width: 500px)  {
 
     .intro-title {
-        padding-top: 10px;
+        padding-top: 60px;
+    }
+
+    .title-mine {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     h1 {
@@ -471,6 +480,13 @@ input:active, :hover, :focus {
         background-image:none;
     }
 
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer-nav {
+        text-align: center !important;
+    }
 }
 
 @media screen and (min-width: 800px) {
